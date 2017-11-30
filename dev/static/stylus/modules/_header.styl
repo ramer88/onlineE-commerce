@@ -1,0 +1,149 @@
+section.header
+	width 100%
+	max-width 1280px
+	margin 0 auto
+	
+	.header__toolbar-top
+		background-color VerydarkGray
+		
+		ul.header__toolbar-list
+			float right
+			padding 7px 0 7px 0
+			font-family lightFount
+			font-size 12px
+			background-color VerydarkGray
+			
+			li
+				display inline-block
+				margin-right 27px
+				
+			&:last-child
+				margin-right 133px
+				
+				a
+					color VerylightGrayColor
+					
+	.header__toolbar-bottom.clearfix
+		background linear-gradient(to bottom, #fff 0%,#ebebeb 100%)
+		padding 20px 147px 17px 141px
+		
+		.header-logo
+			float left
+			margin-right 46px
+			
+		.header-search
+			float left
+			margin-right 51px
+			form
+				width 100%
+				max-width 456px
+				background-color greenColor
+				border-radius 3px
+			
+			input
+				min-width 327px
+				display inline-block
+				height 31px
+				margin 4px
+				padding 0 0 0 8px
+				border none
+				border-radius 3px
+				
+			button
+				display inline-block
+				padding 0 15px 6px 0
+				vertical-align middle
+				border none
+				border-radius 0 3px 3px 0
+				overflow hidden
+				background-color greenColor
+				color #fff
+				font-family mainFont
+				font-size 24px
+				
+				&:before
+					content ''
+					display inline-block
+					vertical-align bottom
+					background url(../img/general/search.png) 0 0 no-repeat
+					width 24px
+					height 24px
+					margin-right 7px
+					
+		.header-basket
+			float left
+			width 190px
+			border-right 1px solid LightTegraiColor
+			
+			.header-basket-cart
+				display block
+				margin-bottom 9px
+				font-family mainFont
+				font-size 22px
+				color mainTextColor
+				
+				span:first-child
+					padding-right 7px
+					
+					&:before
+						content ''
+						display inline-block
+						vertical-align middle
+						background url(../img/general/cart.png) 0 0 no-repeat
+						width 27px
+						height 29px
+						margin-right 9px
+					
+				span:last-child
+					font-size 12px
+					
+			.header-basket-total
+				
+				span
+					display inline-block
+					vertical-align middle
+					margin-right 13px
+					font-family boldFount
+					font-size 23px
+					color mainTextColor
+					
+				input
+					padding 8px 12px 8px 8px
+					background: linear-gradient(to top, #242424, #424242)
+					color VerylightGrayColor
+					box-shadow 1px 1px 0px 0px rgba(118, 118, 118, 0.75)inset
+					border 1px solid #232323
+					border-radius 3px
+					cursor pointer
+					
+		.header-wish-list
+			float left
+			width 112px
+			text-align center
+			font-family mainFont
+			font-size 20px
+			color mainTextColor
+			
+			.header-wish-list--star
+				height 40px
+				background url(../img/general/star.png) center bottom no-repeat
+				
+			span
+				display block
+				position relative
+				margin-top 8px
+				
+				&:after
+					content '20'
+					display block
+					position absolute
+					top -14px
+					right 8px
+					width 28px
+					height 16px
+					border-radius 12px
+					background-color greenColor
+					color VerylightGrayColor
+					font-size 14px
+					line-height -1px
+

@@ -1,0 +1,29 @@
+section.header
+	.header__toolbar-top.clearfix
+		ul.header__toolbar-list
+			li
+				a(href="#") Sign in
+			li
+				a(href="#") My Account
+			li
+				a(href="#") Order Status
+			li
+				a(href="#") Help
+	.header__toolbar-bottom.clearfix
+		.header-logo
+			a(href="#")
+				img(src="../static/img/general/logo.png")
+		.header-search
+			form(action="" method="get").search-form
+				input(name="search" placeholder="Искать здесь..." type="search" required)
+				button(type="submit").Search Search
+		.header-basket
+			.header-basket-cart
+				span Your cart
+				span (2 items)
+			.header-basket-total
+				span $125.0
+				input(type="submit" name="submit" value="Checkout")
+		.header-wish-list
+			.header-wish-list--star
+			span Wish list
